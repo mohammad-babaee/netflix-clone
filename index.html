@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SIMINFLIX</title>
+    <style>
+      
+        #header{
+            background: black;
+            color: white;
+            overflow: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            
+        }
+        
+        
+        #header a{
+            text-decoration: none;
+            font-family: sans-serif;
+            
+        }
+        
+        
+        
+        .logo{
+            background: red;
+            display: inline-block;
+            float: left;
+            margin-right: 25px;
+            padding: 20px 20px 20px 20px;
+        }
+        
+               
+        .leftmenu{
+            
+            display: inline-block;
+            color: black;
+            float: left;
+            
+        }
+        
+        .leftmenu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        
+        .leftmenu ul li{
+            display: inline-block;
+            padding: 20px 20px 20px 20px;
+            
+        }
+       
+        .leftmenu ul li a{
+            color: white;
+            
+        }
+        
+        .leftmenu ul li a:hover{
+            color: blue;
+            
+        }
+        
+
+        
+        .rightmenu{
+            
+            display: inline-block;
+            color: black;
+            float: right;
+            
+        }
+        
+        .rightmenu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        
+        .rightmenu ul li{
+            display: inline-block;
+            padding: 20px 20px 20px 20px;
+            
+        }
+       
+        .rightmenu ul li a{
+            color: white;
+            
+        }
+        
+        .rightmenu ul li a:hover{
+            color: red;
+            
+        }
+        
+        #largeimage { 
+      padding: 200px 25px;       
+      background: url("bg.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+
+        .fontcolor{
+            color: navy;
+        }
+        
+        
+            
+  .button {
+  background: linear-gradient(to bottom right, #0066ff 0%, #cc0066 100%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        
+        #videosection{
+            width: 100%;
+            background: black;
+        }
+        
+        .row{
+            font-size: 0;
+            width: 100%;
+        }
+
+
+        
+        .videoboxes{
+            
+            display: inline-block;
+            background: red;
+            width: 15%;
+            height: 15px;
+            font-size: 16px;
+            margin: 2%;
+        }
+        
+        .video1{
+      padding: 200px 25px;       
+      background: url("poster/1.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video2{
+      padding: 200px 25px;       
+      background: url("poster/2.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video3{
+      padding: 200px 25px;       
+      background: url("poster/3.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+
+        
+        .video4{
+      padding: 200px 25px;       
+      background: url("poster/4.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        #videosection1{
+            width: 100%;
+            background: black;
+        }
+        
+        .row1{
+            font-size: 0;
+            width: 100%;
+        }
+
+
+        
+        .videoboxes1{
+            
+            display: inline-block;
+            background: red;
+            width: 15%;
+            height: 15px;
+            font-size: 16px;
+            margin: 2%;
+            
+        }
+        
+        .video5{
+      padding: 200px 25px;       
+      background: url("poster/5.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video6{
+      padding: 200px 25px;       
+      background: url("poster/6.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video7{
+      padding: 200px 25px;       
+      background: url("poster/7.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+
+        
+        .video8{
+      padding: 200px 25px;       
+      background: url("poster/8.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        #subtitle{
+            font-display: auto;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+                #subtitle1{
+            font-display: auto;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+        #videosection2{
+            width: 100%;
+            background: black;
+        }
+        
+        .row1{
+            font-size: 0;
+            width: 100%;
+        }
+
+
+        
+        .videoboxes1{
+            
+            display: inline-block;
+            background: red;
+            width: 15%;
+            height: 15px;
+            font-size: 16px;
+            margin: 2%;
+        }
+        
+        .video9{
+      padding: 200px 25px;       
+      background: url("poster/9.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video10{
+      padding: 200px 25px;       
+      background: url("poster/10.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        .video11{
+      padding: 200px 25px;       
+      background: url("poster/11.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+
+        
+        .video12{
+      padding: 200px 25px;       
+      background: url("poster/12.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: arial;
+      
+}
+        
+        #subtitle2{
+            font-display: auto;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+        #end{
+            font-display: auto;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+        @media only screen and (max-width: 600px){
+        
+            .videoboxes{
+                width: 90%;
+                margin: 2.5px;
+            }
+        
+        }
+        
+            
+
+      </style>
+      
+
+      
+  </head>
+  <body style="background-color:black;">
+    <div id="header">
+      <div class="logo">
+        <img src="logo.png">
+        </div>
+      <div class="leftmenu">
+        
+        <ul>
+            <li>
+                
+            <a href="https://google.com">Browse</a>
+            
+            
+            </li>
+            
+            <li>
+               
+                <a href="https://google.com">KIDS &#128578;</a>
+            </li>
+            
+            <li>
+                <a href="https://google.com">DVD &#x1F558;</a>
+            </li>
+
+        </ul>
+        
+        
+        
+        </div>
+      <div class="rightmenu">
+        
+                <ul>
+            <li> 
+            <a href="https://google.com">Search &#128269;</a>
+            </li>
+            <li>
+                <a href="https://google.com">Bell &#128226;</a>
+            </li>
+            <li>
+                <a href="https://google.com">Username &#127917;</a>
+                
+                
+            </li>
+
+        </ul>
+        
+        
+        
+        </div>
+                
+        </div>
+      
+      <div id="largeimage">
+       
+       <div class="fontcolor">
+        <h6>Release Date june 2021</h6>
+        <h1>ALONE GIRL IN THE COLD FOREST</h1>
+        <h3>[HD - Full HD - 4K Quality]</h3>
+        <p>This movie is about a girl (sarah) that she looking to find her brother ...</p>
+        <div id="button">
+           
+<input type="button" class="button" value="Watch the trailer">
+
+<input type="button" class="button" value="Go to IMDB page">
+           
+           </div>
+        
+        </div>
+
+      </div>
+      
+      <div id="videosection">
+          
+          <div class="row">
+            
+          <div id="subtitle">
+                  <h1>Love Movies</h1>
+              </div>
+             
+              <center>
+              
+              <div class="videoboxes video1">Video</div>
+              
+              <div class="videoboxes video2">Video</div>
+                
+              <div class="videoboxes video3">Video</div>
+                      
+              <div class="videoboxes video4">Video</div>     
+                   
+                 </center>
+                  
+              </div>
+              <hr>
+              <div id="subtitle1">
+                  <h1>Horror Movies</h1>
+              </div>
+          </div>
+          
+          <div id="videosection1">
+          
+          <div class="row1">
+             
+             <center>
+              
+              <a href="cabin.html">
+
+              <div class="videoboxes video5">
+                
+                  
+
+                </div>
+                
+                
+                </a>
+                
+                             <a href="cabin.html">
+
+              <div class="videoboxes video6">
+                
+                  
+
+                </div>
+                
+                
+                </a>
+                
+                             <a href="cabin.html">
+
+              <div class="videoboxes video7">
+                
+                  
+
+                </div>
+                
+                
+                </a>
+                
+                             <a href="cabin.html">
+
+              <div class="videoboxes video8">
+                
+                  
+
+                </div>
+                
+                
+                </a>
+                
+                
+                 </center>
+                  
+              </div>
+              
+          </div>
+          
+          <hr>
+          
+          <div id="subtitle2">
+                  <h1>Best Series</h1>
+              </div>
+          
+          
+          <div id="videosection2">
+          
+          <div class="row1">
+             
+             <center>
+              
+              <div class="videoboxes video9">Video</div>
+              
+              <div class="videoboxes video10">Video</div>
+                
+              <div class="videoboxes video11">Video</div>
+                      
+              <div class="videoboxes video12">Video</div>        
+                 
+                 </center>
+                  
+              </div>
+              
+          </div>
+          
+          <hr>
+          
+          <div id="end">
+          <center>
+              <p>&copy; Copyright Notice! This Website Programmed By : [ Mohammad Babaee ] | 2020 - 2029 | All rights reserved</p>
+          </center>
+          </div>
+
+  </body>
+</html>
